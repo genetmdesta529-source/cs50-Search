@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Google Search</a>
+    </nav>
+
+    <div class="advanced-container">
+        <h2>Advanced Search</h2>
+
+        <form action="https://www.google.com/search">
+
+            <div class="field-row">
+                <label for="all-words">Find pages with...</label>
+                <span class="hint">all these words:</span>
+                <!-- as_q = "all these words" -->
+                <input type="text" id="all-words" name="as_q">
+            </div>
+
+            <div class="field-row">
+                <span class="hint">this exact word or phrase:</span>
+                <!-- as_epq = "exact phrase query" -->
+                <input type="text" name="as_epq">
+            </div>
+
+            <div class="field-row">
+                <span class="hint">any of these words:</span>
+                <!-- as_oq = "or query" -->
+                <input type="text" name="as_oq">
+            </div>
+
+            <div class="field-row">
+                <span class="hint">none of these words:</span>
+                <!-- as_eq = "exclude query" -->
+                <input type="text" name="as_eq">
+            </div>
+
+            <input class="advanced-submit" type="submit" value="Advanced Search">
+        </form>
+    </div>
+</body>
+
+</html>

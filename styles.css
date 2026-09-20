@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+nav a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 64px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Google's classic 4-color logo look, done in plain CSS spans */
+.logo span:nth-child(1) {
+    color: #4285F4;
+}
+
+.logo span:nth-child(2) {
+    color: #EA4335;
+}
+
+.logo span:nth-child(3) {
+    color: #FBBC05;
+}
+
+.logo span:nth-child(4) {
+    color: #4285F4;
+}
+
+.logo span:nth-child(5) {
+    color: #34A853;
+}
+
+.logo span:nth-child(6) {
+    color: #EA4335;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 500px;
+    max-width: 80vw;
+    padding: 12px 20px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    /* rounded corners, like the spec asks for */
+    font-size: 16px;
+    outline: none;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+input[type=submit] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 10px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border: 1px solid #dadce0;
+}
+
+
+.advanced-container {
+    width: 500px;
+    max-width: 90vw;
+}
+
+.advanced-container h2 {
+    border-bottom: 1px solid #ebebeb;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.field-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* left aligned, per spec */
+    margin-bottom: 20px;
+}
+
+.field-row label {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.field-row .hint {
+    color: #70757a;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.field-row input[type=text] {
+    width: 100%;
+    border-radius: 4px;
+    /* advanced search fields are square, not pill-shaped */
+}
+
+.advanced-submit {
+    background-color: #4285F4;
+    /* blue button, white text, per spec */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.advanced-submit:hover {
+    background-color: #1a73e8;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <a href="images.html">Image Search</a>
+        <a href="advanced.html">Advanced Search</a>
+    </nav>
+
+    <div class="logo">
+        <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+    </div>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" autofocus>
+        <div class="buttons">
+            <!-- normal search: submits with no name, so it's ignored as a GET param -->
+            <input type="submit" value="Google Search">
+            <!-- "I'm Feeling Lucky": this named button adds btnI=1 to the query string,
+                     which Google reads as "skip results, go straight to first hit" -->
+            <input type="submit" name="btnI" value="I'm Feeling Lucky">
+        </div>
+    </form>
+</body>
+
+</html>
